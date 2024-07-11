@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFSAL Online Shopping</title>
+    <link rel="stylesheet" href="STYLE.CSS">
+</head>
+<body>
+    <div class="container">
+        <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;font-style: italic;">Welcome to F6 MENS SHOP- Online Shopping</h1>
+        <form id="shoppingForm">
+            <label for="customerName">Customer Name</label>
+            <input type="text" id="customerName" name="customerName" placeholder="Enter Customer Name">
+
+            <label for="mobileNumber">Mobile Number</label>
+            <input type="text" id="mobileNumber" name="mobileNumber" placeholder="Enter your mobile no">
+
+            <label for="emailId">Email ID</label>
+            <input type="email" id="emailId" name="emailId" placeholder="Enter Your Email">
+
+            <label for="billingAddress">Billing Address</label>
+            <textarea id="billingAddress" name="billingAddress" placeholder="Enter Your Address"></textarea>
+
+            <label for="product">Choose Product</label>
+            <select id="product" name="product">
+                <option value="SHIRT">SHIRT</option>
+                <option value="PANT">PANT</option>
+                <option value="TSHIRT">TSHIRT</option>
+            </select>
+
+            <label for="quantity">Enter Quantity</label>
+            <input type="number" id="quantity" name="quantity" placeholder="Enter Quantity">
+
+            <label for="paymentMode">Payment Mode</label>
+            <select id="paymentMode" name="paymentMode">
+                <option value="cod">Cash On Delivery</option>
+                <option value="online">Online Payment</option>
+            </select>
+
+            <label for="bagTotal">Bag Total</label>
+            <input type="text" id="bagTotal" name="bagTotal" readonly>
+
+            <label for="couponCode">Coupon Code</label>
+            <input type="text" id="couponCode" name="couponCode" placeholder="Enter Coupon Code">
+
+            <label style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;color: black;">Delivery Options</label>
+            <input type="radio" id="express" name="deliveryOption" value="express">
+            <label for="express">Express</label>
+            <input type="radio" id="standard" name="deliveryOption" value="standard" checked>
+            <label for="standard">Standard</label>
+
+            <input type="checkbox" id="terms" name="terms">
+            <label for="terms">I Agree to the Terms & Conditions</label>
+
+            <div class="buttons">
+                <button type="reset">Clear</button>
+                <button type="button" onclick="calculateAmount()">Chk. Amount Payable</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
